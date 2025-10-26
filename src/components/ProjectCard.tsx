@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 interface ProjectCardProps {
+  id: string;
   title: string;
   description: string;
   image: string;
@@ -9,14 +11,15 @@ interface ProjectCardProps {
   demoUrl: string;
   repoUrl: string;
 }
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard = ({
+  id,
   title,
   description,
   image,
   tags,
   demoUrl,
   repoUrl
-}) => {
+}:ProjectCardProps) => {
   return <motion.div className="rounded-xl overflow-hidden h-full flex flex-col" whileHover={{
     y: -5
   }} transition={{
@@ -35,15 +38,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               {tag}
             </span>)}
         </div>
-        <div className="flex gap-3 mt-auto">
-          <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center flex items-center justify-center gap-1 text-sm">
-            <ExternalLink size={16} />
-            Live Demo
-          </a>
-          <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 border border-gray-300 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center flex items-center justify-center gap-1 text-sm">
-            <Github size={16} />
-            GitHub
-          </a>
+        <div className="flex flex-col gap-3 mt-auhref">
+          <div className="flex gap-3">
+            <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center flex items-center justify-center gap-1 text-sm">
+              <ExternalLink size={16} />
+              Live Demo
+            </a>
+            <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 border border-gray-300 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center flex items-center justify-center gap-1 text-sm">
+              <Github size={16} />
+              GitHub
+            </a>
+          </div>
+          <Link href={`/projects/${id}`} className="text-blue-600 font-medium flex items-center justify-center hover:text-blue-700 transition-colors">
+            View Details
+            <ArrowRight size={16} className="ml-1" />
+          </Link>
         </div>
       </div>
     </motion.div>;

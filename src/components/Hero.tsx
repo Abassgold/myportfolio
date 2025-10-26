@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, FileText } from 'lucide-react';
@@ -35,7 +36,7 @@ export const Hero = () => {
           duration: 0.8,
           delay: 0.4
         }}>
-            Full-Stack MERN Developer & Software Engineer
+            Full-Stack Developer & Software Engineer
           </motion.h2>
           <motion.p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-600 dark:text-gray-300" initial={{
           opacity: 0,
@@ -63,13 +64,15 @@ export const Hero = () => {
               <Github size={18} />
               View Projects
             </a>
-            <a href="#" className="px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 font-medium">
+            <a href="https://drive.google.com/file/d/1PfZ6wfYhrsMo86Ix01Ae4m2Ybcw0drGI/view"
+             target="_blank" rel="noopener noreferrer"
+             className="px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 font-medium">
               <FileText size={18} />
               Download Resume
             </a>
           </motion.div>
         </motion.div>
-        <motion.div className="absolute bottom-10 left-0 right-0 flex justify-center hidden md:flex" initial={{
+        <motion.div className="absolute bottom-10 left-0 right-0  justify-center hidden md:flex" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
