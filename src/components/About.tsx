@@ -45,7 +45,7 @@ export const About: React.FC = () => {
             <div className="md:w-2/3 space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 I&apos;m a passionate Full-Stack Developer specializing in the
-                MERN stack with over 5 years of professional experience building
+                MERN stack with over 2 years of professional experience building
                 web applications and software solutions. My journey in tech
                 began with a deep curiosity about how digital products work,
                 which evolved into a career focused on creating elegant
