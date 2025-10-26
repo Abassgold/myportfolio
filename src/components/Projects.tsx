@@ -34,7 +34,7 @@ export const Projects = () => {
     description: 'A scalable fintech platform for buying virtual numbers, eSIMs, trading gift cards, and performing secure crypto transactions for local and global users.',
     image: 'https://abasskola.vercel.app/flozap.png',
     tags: ['Nextjs', 'GraphQL', 'Node.js', 'MongoDB', 'BullMq', 'Api'],
-    demoUrl: 'www.flozap.com.ng',
+    demoUrl: 'https://flozap.vercel.app/',
     repoUrl: 'https://github.com/Abassgold/flozap'
   }, {
     id: 'kobodrop',
