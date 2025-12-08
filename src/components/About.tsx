@@ -60,14 +60,7 @@ export const About: React.FC = () => {
                 user experience, ensuring that the solutions I build are not
                 just functional but also intuitive and enjoyable to use.
               </p>
-
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                When I&apos;m not coding, I enjoy contributing to open-source
-                projects, mentoring junior developers, and staying updated with
-                the latest technologies and industry trends. I&apos;m always
-                looking for new challenges and opportunities to grow as a
-                developer.
-              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300">When I&apos;m not coding, I enjoy contributing to open-source projects, exploring innovative tech solutions, and staying updated with the latest technologies and industry trends. I&apos;m always looking for new challenges and opportunities to grow as a developer.</p>
             </div>
           </div>
         </motion.div>
