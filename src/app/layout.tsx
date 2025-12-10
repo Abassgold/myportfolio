@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 const barlow = Barlow_Condensed({
   weight: '400',
   subsets: ["latin"],
+  preload: false
 });
 
 
